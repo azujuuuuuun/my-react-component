@@ -11,7 +11,8 @@
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@storybook/react": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "typescript": "^3.9.5"
   },
   "dependencies": {
     "react": "^16.13.1",
