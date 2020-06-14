@@ -1,0 +1,27 @@
+{
+  "name": "my-react-component",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/azujuuuuuun/my-react-component.git",
+  "author": "azujuuuuuun <azujuuuuuun@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@storybook/addon-info": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@types/jest": "^26.0.0",
+    "babel-loader": "^8.1.0",
+    "jest": "^26.0.1",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "ts-jest": "^26.1.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
