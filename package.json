@@ -6,7 +6,9 @@
   "author": "azujuuuuuun <azujuuuuuun@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@storybook/react": "^5.3.19"
+    "@babel/core": "^7.10.2",
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0"
   },
   "dependencies": {
     "react": "^16.13.1",
