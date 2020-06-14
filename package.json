@@ -1,0 +1,8 @@
+{
+  "name": "my-react-component",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/azujuuuuuun/my-react-component.git",
+  "author": "azujuuuuuun <azujuuuuuun@gmail.com>",
+  "license": "MIT"
+}
