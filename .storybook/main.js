@@ -9,7 +9,7 @@ module.exports = {
           loader: require.resolve("ts-loader"),
           options: {
             compilerOptions: {
-              noEmit: true,
+              declaration: false,
             },
           },
         },
