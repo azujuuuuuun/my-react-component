@@ -6,6 +6,7 @@
   "author": "azujuuuuuun <azujuuuuuun@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build-storybook": "build-storybook -c .storybook -o .out",
     "storybook": "start-storybook"
   },
   "devDependencies": {
