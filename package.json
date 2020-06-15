@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-info": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "@types/jest": "^26.0.0",
