@@ -6,6 +6,7 @@
   "author": "azujuuuuuun <azujuuuuuun@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc -p tsconfig.build.json",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "format": "prettier --write 'src/**/*.{ts,tsx}'",
     "lint": "yarn lint:script",
