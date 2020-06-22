@@ -1,4 +1,4 @@
-name: Continuous Delivery Workflow
+name: Continuous Integration Workflow
 on:
   push:
     branches:
