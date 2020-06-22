@@ -3,20 +3,30 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
 
 jobs:
-  deploy:
-    name: deploy
-    runs-on: ubuntu-18.04
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
       - run: yarn install
-      - run: yarn build-storybook
+      - run: yarn lint
 
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: .out
+  type-check:
+    name: type-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn install
+      - run: yarn type-check
+
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn install
+      - run: yarn build
