@@ -17,6 +17,8 @@ type InputProps = {
   type?: string;
   /** value */
   value?: string | number;
+  /** aria-label */
+  ariaLabel?: string;
   /** onChange */
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 };
@@ -30,6 +32,7 @@ export function Input({
   required,
   type,
   value,
+  ariaLabel,
   onChange,
 }: InputProps) {
   return (
@@ -42,6 +45,7 @@ export function Input({
       required={required}
       type={type}
       value={value}
+      aria-label={ariaLabel}
       onChange={onChange}
     />
   );

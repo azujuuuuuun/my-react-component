@@ -9,85 +9,63 @@ export default {
 
 const Story = () => (
   <>
-    <div>
-      <label>
-        default
-        <Input />
-      </label>
-    </div>
+    <section>
+      <h1>default</h1>
+      <Input ariaLabel="default" />
+    </section>
 
-    <div>
-      <label>
-        disabled
-        <Input disabled />
-      </label>
-    </div>
+    <section>
+      <h1>disabled</h1>
+      <Input disabled ariaLabel="disabled" />
+    </section>
 
-    <div>
-      <label>
-        maxLength
-        <Input maxLength={8} />
-      </label>
-    </div>
+    <section>
+      <h1>maxLength</h1>
+      <Input maxLength={8} ariaLabel="maxLength" />
+    </section>
 
-    <div>
-      <label>
-        minLength
-        <Input minLength={1} />
-      </label>
-    </div>
+    <section>
+      <h1>minLength</h1>
+      <Input minLength={1} ariaLabel="minLength" />
+    </section>
 
-    <div>
-      <label>
-        name
-        <Input name="name" />
-      </label>
-    </div>
+    <section>
+      <h1>name</h1>
+      <Input name="name" ariaLabel="name" />
+    </section>
 
-    <div>
+    <section>
+      <h1>required</h1>
       <form>
-        <label>
-          required
-          <Input required />
-        </label>
+        <Input required ariaLabel="required" />
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </section>
 
-    <div>
-      <label>
-        type=text
-        <Input type="text" />
-      </label>
-    </div>
+    <section>
+      <h1>type=text</h1>
+      <Input type="text" ariaLabel="type=text" />
+    </section>
 
-    <div>
-      <label>
-        type=number
-        <Input type="number" />
-      </label>
-    </div>
+    <section>
+      <h1>type=number</h1>
+      <Input type="number" ariaLabel="type=number" />
+    </section>
 
-    <div>
-      <label>
-        type=password
-        <Input type="password" />
-      </label>
-    </div>
+    <section>
+      <h1>type=password</h1>
+      <Input type="password" ariaLabel="type=password" />
+    </section>
 
-    <div>
-      <label>
-        value
-        <Input value="value" />
-      </label>
-    </div>
+    <section>
+      <h1>value</h1>
+      <Input value="value" ariaLabel="value" />
+    </section>
 
-    <div>
-      <label>
-        onChange
-        <Input onChange={action("onChange")} />
-      </label>
-    </div>
+    <section>
+      <h1>onChange</h1>
+      <Input onChange={action("onChange")} ariaLabel="onChange" />
+    </section>
   </>
 );
 
