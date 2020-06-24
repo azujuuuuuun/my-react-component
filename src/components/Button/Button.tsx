@@ -3,22 +3,22 @@ import React, { MouseEvent } from "react";
 type ButtonProps = {
   /** className */
   className?: string;
+  /** text */
+  text: string;
   /** type */
   type?: "submit" | "reset" | "button";
   /** disabled */
   disabled?: boolean;
   /** onClick */
   onClick?: (e: MouseEvent<HTMLButtonElement>) => void;
-  /** text */
-  text: string;
 };
 
 export function Button({
   className,
+  text,
   type,
   disabled,
   onClick,
-  text,
 }: ButtonProps) {
   return (
     <button
