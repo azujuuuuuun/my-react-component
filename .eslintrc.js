@@ -23,5 +23,11 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
   },
 };
