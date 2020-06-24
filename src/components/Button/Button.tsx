@@ -1,4 +1,4 @@
-import React, { MouseEvent, ReactNode } from "react";
+import React, { MouseEvent } from "react";
 
 type ButtonProps = {
   /** className */
@@ -9,8 +9,8 @@ type ButtonProps = {
   disabled?: boolean;
   /** onClick */
   onClick?: (e: MouseEvent<HTMLButtonElement>) => void;
-  /** children */
-  children?: ReactNode;
+  /** text */
+  text: string;
 };
 
 export function Button({
@@ -18,7 +18,7 @@ export function Button({
   type,
   disabled,
   onClick,
-  children,
+  text,
 }: ButtonProps) {
   return (
     <button
@@ -27,7 +27,7 @@ export function Button({
       disabled={disabled}
       onClick={onClick}
     >
-      {children}
+      {text}
     </button>
   );
 }
