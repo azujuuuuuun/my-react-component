@@ -51,5 +51,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "@emotion/styled": "^10.0.27"
   }
 }
